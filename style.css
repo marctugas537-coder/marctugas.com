@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    border-bottom: 2px solid #ff0055;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.logo span {
+    color: #ff0055;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #ff0055;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 85vh;
+    background: url(1.jpg)
+                center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    top: 0;
+    left: 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    z-index: 2;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    z-index: 2;
+    color: #ddd;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #ff0055;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 2;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #ff2a70;
+    box-shadow: 0 0 15px #ff0055;
+}
+
+/* TRENDING MOVIES */
+.trending {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.trending h2 {
+    font-size: 2.2rem;
+    color: #ff0055;
+    margin-bottom: 30px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.movie-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    border-color: #ff0055;
+    box-shadow: 0 0 18px #ff0055;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-top: 2px solid #ff0055;
+    color: #bbb;
+}
